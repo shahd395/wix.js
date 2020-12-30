@@ -46,7 +46,7 @@ export function submitButton_click(event) {
 
 	console.log("got payload", payload);
 
-	let url = "https://warm-sands-89302.herokuapp.com/predict"
+	let url = "https://fast-shelf-76150.herokuapp.com/predict"
 	fetch(url, {method: 'post', body: JSON.stringify(payload), headers: {'Content-Type': 'application/json'}})
     	.then(response => response.json())
     	.then(json => $w("#response").text = json.result)
